@@ -5,9 +5,14 @@ var express = require("express");
 var app = express();
 var path = require('path');
 
+/*---------------------------------------------------------------*/
 // set assignedPort to 3000
 app.set('port', 3000);
 assignedPort = app.get('port');
+
+// declare the "public" folder as static
+app.use(express.static(path.join(__dirname, "public")));
+/*---------------------------------------------------------------*/
 
 
 // URL routes to access the website
@@ -25,13 +30,13 @@ assignedPort = app.get('port');
 /*///////////////////////////////////////////////////////////////*/
 
 // Default route - home page
-app.get('/', function(req, res){
-    console.log("The user is accessing the default page...");
-    
-    // this notation is perfect for avoiding path issues between
-    // different operating systems
-    res.status(200).sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+//app.get('/', function(req, res){
+//    console.log("The user is accessing the default page...");
+//    
+//    // this notation is perfect for avoiding path issues between
+//    // different operating systems
+//    res.status(200).sendFile(path.join(__dirname, 'public', 'index.html'));
+//});
 
 /*///////////////////////////////////////////////////////////////*/
 
