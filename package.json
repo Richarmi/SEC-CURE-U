@@ -1,0 +1,24 @@
+{
+  "name": "sec-cure-u",
+  "version": "1.0.0",
+  "description": "This project is for ACED Intervention practice work. This will implement a website that will perform cryptographic/cryptanalytic functions on messages as well as store them",
+  "main": "\u001bapp.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Richarmi/SEC-CURE-U.git"
+  },
+  "author": "Michael Richards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Richarmi/SEC-CURE-U/issues"
+  },
+  "homepage": "https://github.com/Richarmi/SEC-CURE-U#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mocha": "^6.1.4"
+  }
+}
