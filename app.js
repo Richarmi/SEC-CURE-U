@@ -1,12 +1,16 @@
 // constants
-var currentPort = 3000;
+var assignedPort = 3000;
 
 var express = require("express");
 var app = express();
 
-// this line of code is having problems
+// set assignedPort to 3000
 app.set('port', 3000);
-currentPort = app.get('port');
+assignedPort = app.get('port');
 
-app.listen(currentPort);
-console.log("We are now listening in on port " + currentPort);
+var server = app.listen(assignedPort, function(){
+    var currentPort = server.address().port;
+    console.log("We are now listening in on port " + currentPort);
+});
+
+//console.log("Me first!");
