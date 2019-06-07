@@ -5,12 +5,14 @@ var express = require("express");
 var app = express();
 var path = require('path');
 
+var routes = require("./routes");
+
 /*---------------------------------------------------------------*/
 // set assignedPort to 3000
 app.set('port', 3000);
 assignedPort = app.get('port');
 
-//
+// Define the middleware for printing requests to the prompt screen
 app.use(function(req, res, next){
     console.log(req.method, req.url);
     next();
@@ -47,11 +49,13 @@ app.use(express.static(path.join(__dirname, "public")));
 /*///////////////////////////////////////////////////////////////*/
 
 // Default route - retreiving json
-app.get('/json', function(req, res){
-    console.log("The user is retreiving json code...");
-    
-    res.status(200).json( {'jsonData' : true} );
-});
+//app.get('/json', function(req, res){
+//    console.log("The user is retreiving json code...");
+//    
+//    res.status(200).json( {'jsonData' : true} );
+//});
+
+app.use('/api', routes);
 
 /*///////////////////////////////////////////////////////////////*/
 
