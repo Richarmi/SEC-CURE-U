@@ -5,7 +5,8 @@ var express = require("express");
 var app = express();
 var path = require('path');
 
-var routes = require("./routes");
+// call routes or controllers
+var routes = require("./api/routes");
 
 /*---------------------------------------------------------------*/
 // set assignedPort to 3000
