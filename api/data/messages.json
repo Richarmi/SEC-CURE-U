@@ -1,0 +1,7 @@
+[
+    {"message" : "this is a test", "isEncrypted" : false, "standard" : "none", "userID" : "00001"},
+    {"message" : "hi mister pooky", "isEncrypted" : false, "standard" : "none", "userID" : "00002"},
+    {"message" : "love you paul", "isEncrypted" : false, "standard" : "none", "userID" : "00003"}
+    
+    
+]

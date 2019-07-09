@@ -19,6 +19,8 @@
   "homepage": "https://github.com/Richarmi/SEC-CURE-U#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "mongoose": "^5.6.0",
+    "nodemon": "^1.19.1"
   }
 }
